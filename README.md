@@ -1,4 +1,5 @@
-# db2pdtop
+# db2pdtop.pl
+
 Utility for Monitoring Db2 EDUs
 
 When monitoring CPU utilization on a Db2 server, each Db2 instance 
