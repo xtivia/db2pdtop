@@ -67,10 +67,11 @@ sub collectAndPrintData {
     open(IN, "db2pd -edus |") || die "can't execute db2pd";
     while(<IN>) {
 
-	if (/db2pd can only be run/) {
-	    print "Error: " . $_;
-	    exit 1;
-	}
+        #  Capture permission error from db2pd
+        if (/db2pd can only be run/) {
+            print "Error: " . $_;
+            exit 1;
+        }
 	
         # print the first 8 lines of db2pd -edus output
         $buf .= sprintf("%s", $_) unless $line > 8;
