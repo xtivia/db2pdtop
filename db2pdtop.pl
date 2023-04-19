@@ -2,6 +2,8 @@
 #
 #   db2pdtop.pl  --  Display Db2 EDU CPU utilization statistics
 #
+#   Copyright (c) 2023 XTIVIA, Inc.
+#
 #   2023-04-14  Ian D. Bjorhovde <ibjorhovde@xtivia.com>
 #
 
