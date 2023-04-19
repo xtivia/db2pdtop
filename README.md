@@ -9,10 +9,11 @@ CPU utilization of each thread within the db2sysc process using `top -H`,
 this view does not provide useful information because each thread is 
 shown only as "db2sysc".
 
-`db2pdtop.pl` displays which Engine Dispatchable Units (EDUs) within the 
-db2sysc process are consuming CPU.  `db2pdtop.pl` uses similar command-line
-options as top, and displays CPU information about both the Db2 processes 
-for the instance as well as the EDUs within the db2sysc process.
+`db2pdtop.pl` displays which threads (Engine Dispatchable Units or EDUs) 
+within the db2sysc process are consuming CPU.  `db2pdtop.pl` uses similar 
+command-line options as top, and displays CPU information about both the 
+Db2 processes for the instance as well as the EDUs within the db2sysc 
+process.
 
 `db2pdtop.pl` relies on `db2pd`, and therefore must be executed by a user 
 with SYSADM privileges.
