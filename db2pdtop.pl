@@ -26,6 +26,7 @@ if (! $ENV{'DB2INSTANCE'}) {
 my $E;      # Hash reference for storing db2pd information
 
 collectAndPrintData();
+exit if $iterations == 1;
 
 my $i = 0;
 while(1) {
